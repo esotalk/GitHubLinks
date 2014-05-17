@@ -13,9 +13,8 @@ $form = $data["gitHubLinksSettingsForm"];
 <ul class='form'>
 
 <li>
-<label>GitHub repository</label>
-<?php echo $form->input("repository"); ?>
-<small>Format: user/repository. e.g. esotalk/esoTalk</small>
+<label><?php echo T("GitHub repository"); ?></label>
+<?php echo $form->input("repository", "text", array("placeholder" => "user/repository")); ?>
 </li>
 
 </ul>
